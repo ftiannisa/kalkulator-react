@@ -1,0 +1,25 @@
+.navbar {
+  list-style: none;
+  justify-content: space-around;
+  margin: 20px auto;
+  padding: 0;
+  font-size: larger;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 25px;
+}
+
+.navbar a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+.navbar a:hover {
+  color: aliceblue;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin: 0 -20px;
+}
