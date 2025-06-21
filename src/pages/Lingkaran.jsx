@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import Title from "../components/Title";
 import "../App.css";
+import Tombol from "../components/Tombol";
 
 export default function Lingkaran() {
   const jariRef = useRef(null);
@@ -56,9 +57,7 @@ export default function Lingkaran() {
           <br />
           <input type="number" ref={jariRef} id="ijari" />
         </label>
-        <button type="button" onClick={kalkulator}>
-          Hitung
-        </button>
+        <Tombol text="Hitung" onclick={kalkulator} />
 
         <br />
         {output}

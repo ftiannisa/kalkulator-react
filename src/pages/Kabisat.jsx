@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import Title from "../components/Title";
+import Tombol from "../components/Tombol";
 
 export default function Kabisat() {
   const tahunRef = useRef(null);
@@ -53,9 +54,7 @@ export default function Kabisat() {
           Masukkan tahun
           <input type="number" ref={tahunRef} id="itahun" />
         </label>
-        <button type="button" onClick={cek}>
-          Cek
-        </button>
+        <Tombol text="Cek" onclick={cek}/>
 
         <br />
         {output}

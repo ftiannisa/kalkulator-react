@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import Title from "../components/Title";
+import Tombol from "../components/Tombol";
 
 export default function Perbandingan() {
   const aRef = useRef(null);
@@ -44,9 +45,7 @@ export default function Perbandingan() {
           <input type="number" ref={bRef} id="iangka2" />
         </label>
         <br />
-        <button type="button" onClick={bandingkan}>
-          Bandingkan
-        </button>
+        <Tombol text="Bandingkan" onclick={bandingkan}/>
 
         <br />
         {output}
